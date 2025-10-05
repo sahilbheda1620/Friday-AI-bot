@@ -16,6 +16,17 @@ in visual studio code, Download live server extension by ritwick Dey
 
 <<< Step - 3 >>>
 
+Get Gemini API key:
+
+Go to: https://aistudio.google.com/app/apikey
+Sign in with Google account
+Click "Create API Key"
+Copy the generated key
+and paste it in config.py "apikey="PASTE_YOUR_API_KEY_HERE""
+
+
+<<< Step - 4 >>>
+
 now open command prompt and go to the folder where you have these files.
 
 then type command >>>> python main.py
@@ -23,7 +34,7 @@ then type command >>>> python main.py
 (the server is being started.)
 
 
-<<< Step - 4 >>>
+<<< Step - 5 >>>
 
 open index.html in visual studio code and right click on code. click on 'Open with live server'.
 
