@@ -1,7 +1,7 @@
 # Gemini API Configuration
 # Get your API key from: https://makersuite.google.com/app/apikey
 
-apikey = "AIzaSyDR9d0lfB1hKDfS9ye4OY6XbkgjNPbI3-c"
+apikey = "PASTE_YOUR_API_KEY_HERE"
 
 # Server Configuration
 HOST = "localhost"
@@ -20,5 +20,6 @@ MAX_OUTPUT_TOKENS = 1024
 
 # Debug mode
 DEBUG = True
+
 
 print("Configuration loaded successfully")
