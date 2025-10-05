@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Friday - AI Assistant</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Login Page -->
+        <div id="loginPage" class="auth-container">
+            <div class="auth-header">
+                <h1>Friday</h1>
+                <p>Your Personal AI Assistant</p>
+            </div>
+            <div id="loginError" class="error-message hidden"></div>
+            <form id="loginForm">
+                <div class="form-group">
+                    <label for="loginEmail">Email</label>
+                    <input type="email" id="loginEmail" required placeholder="Enter your email">
+                </div>
+                <div class="form-group">
+                    <label for="loginPassword">Password</label>
+                    <input type="password" id="loginPassword" required placeholder="Enter your password">
+                </div>
+                <button type="submit" class="btn btn-primary">Login</button>
+            </form>
+            <div class="auth-switch">
+                Don't have an account? <a href="#" id="showRegister">Register here</a>
+            </div>
+        </div>
+
+        <!-- Registration Page -->
+        <div id="registerPage" class="auth-container hidden">
+            <div class="auth-header">
+                <h1>Friday</h1>
+                <p>Create Your Account</p>
+            </div>
+            <div id="registerError" class="error-message hidden"></div>
+            <form id="registerForm">
+                <div class="form-group">
+                    <label for="registerName">Full Name</label>
+                    <input type="text" id="registerName" required placeholder="Enter your name">
+                </div>
+                <div class="form-group">
+                    <label for="registerEmail">Email</label>
+                    <input type="email" id="registerEmail" required placeholder="Enter your email">
+                </div>
+                <div class="form-group">
+                    <label for="registerPassword">Password</label>
+                    <input type="password" id="registerPassword" required placeholder="Create a password (min 6 characters)">
+                </div>
+                <div class="form-group">
+                    <label for="registerConfirmPassword">Confirm Password</label>
+                    <input type="password" id="registerConfirmPassword" required placeholder="Confirm your password">
+                </div>
+                <button type="submit" class="btn btn-primary">Register</button>
+            </form>
+            <div class="auth-switch">
+                Already have an account? <a href="#" id="showLogin">Login here</a>
+            </div>
+        </div>
+
+        <!-- Chat Interface -->
+
+        <div id="chatInterface" class="chat-container">
+        <div class="chat-header">
+        <div>
+            <h2>Friday Assistant</h2>
+            <div class="status-info">
+                <span class="status-indicator disconnected" id="statusIndicator"></span>
+                <span id="statusText">Connecting...</span>
+            </div>
+        </div>
+        <div class="header-actions">
+            <button class="btn-history" id="historyBtn">📜 Chat History</button>
+            <div class="user-info">
+                <div class="user-avatar" id="userAvatar">U</div>
+                <span class="user-name" id="userName">User</span>
+                <button class="btn-logout" id="logoutBtn">Logout</button>
+            </div>
+        </div>
+       </div>
+
+               <!-- History Sidebar -->
+            <div class="history-sidebar hidden" id="historySidebar">
+                <div class="history-header">
+                    <h3>Chat History</h3>
+                    <button class="btn-close" id="closeHistoryBtn">✕</button>
+                </div>
+                <div class="history-search">
+                    <input type="text" id="historySearch" placeholder="Search conversations...">
+                </div>
+                <div class="history-list" id="historyList">
+                    <div class="loading">Loading history...</div>
+                </div>
+            </div>
+
+            
+            <div class="chat-messages" id="chatMessages">
+                <div class="welcome-message">
+                    <h3>Welcome to Friday!</h3>
+                    <p>How can I assist you today?</p>
+                </div>
+            </div>
+            
+            <div class="chat-input-container">
+                <button class="btn-icon btn-mic" id="micBtn" title="Voice Input">🎤</button>
+                <input type="text" class="chat-input" id="chatInput" placeholder="Ask me anything...">
+                <button class="btn-icon btn-send" id="sendBtn">📤</button>
+                <button class="btn-icon btn-stop hidden" id="stopBtn">⏹️</button>
+            </div>
+        </div>
+    </div>
+
+    <script type="module" src="script.js"></script>
+</body>
+</html>

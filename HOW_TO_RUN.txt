@@ -1,0 +1,32 @@
+<<< Step -1 >>>
+
+install required libraries in cmd.
+just paste this command to install all libraries in one command.
+
+pip install websockets google-generativeai asyncio json datetime re webbrowser subprocess platform
+
+
+<<< Step - 2 >>>
+
+open visual studio code. Click in the top-left corner "file" menu. Go to "Open Folder". then select your folder where you have these files.
+  
+in visual studio code, Download live server extension by ritwick Dey
+(also download python extension if you do not downloaded that.)
+
+
+<<< Step - 3 >>>
+
+now open command prompt and go to the folder where you have these files.
+
+then type command >>>> python main.py
+
+(the server is being started.)
+
+
+<<< Step - 4 >>>
+
+open index.html in visual studio code and right click on code. click on 'Open with live server'.
+
+it automatically opens in browser. 
+
+now your project is running. register or login and chat.
